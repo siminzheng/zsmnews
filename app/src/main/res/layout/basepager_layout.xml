@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#79CEF4">
+        <TextView
+            android:id="@+id/tv_basepager"
+            android:text="新闻"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="154dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_basepager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

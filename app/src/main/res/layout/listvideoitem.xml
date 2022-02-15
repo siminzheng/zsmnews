@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.jzvd.JzvdStd
+        android:id="@+id/jz_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <TextView
+        android:id="@+id/video_title"
+        android:text="当时我和我爸吵了一架，我看了这个视频笑了"
+        android:textSize="19sp"
+        android:lines="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/video_src"
+            android:text="新媒体"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="25dp"/>
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
