@@ -26,7 +26,7 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -34,12 +34,18 @@
             android:id="@+id/web_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+        <ToggleButton
+            android:id="@+id/shoucanganniu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/tbt_shoucang"
+            android:textOn=""
+            android:textOff=""
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="480dp"/>
 
-    </RelativeLayout>
 
-
-
-
+    </FrameLayout>
 
 
 

@@ -13,33 +13,66 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.example.zsmnews.R;
+import com.example.zsmnews.dataBean.newsshoucang;
+
+import org.litepal.LitePal;
+import org.xutils.common.util.LogUtil;
+
+import java.util.List;
 
 public class RealNewsPager extends AppCompatActivity implements View.OnClickListener{
 
     private ImageButton ib_goback;
     private ImageButton ib_textsize;
     private WebView web_view;
+    private ToggleButton shoucanganniu;
     private String realNewsurl;
     private WebSettings websetting;
     private String CachePath;
+    private String realNewsTitle;
+    private String realNewsDate;
+    private String realNewsPic;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_real_news_pager);
+        //删除之前的收藏
+        //LitePal.deleteAll(newsshoucang.class);
+
+        Intent it2=getIntent();
+        Bundle bd2=it2.getExtras();
+        realNewsurl=bd2.getString("realnewsurl");
+        realNewsTitle=bd2.getString("realnewstitle");
+        realNewsDate=bd2.getString("realnewsdate");
+        realNewsPic=bd2.getString("realnewspic");
+        LogUtil.e("传进来给数据库用的url有："+realNewsurl+" "+realNewsTitle+"  "+realNewsDate+" "+realNewsPic);
+        //realNewsurl=getIntent().getStringExtra("realnewsurl");
+
+
+
 
         findView();
         getData();
+
+        List<newsshoucang> nes2list = LitePal.where("url=?", realNewsurl).find(newsshoucang.class);
+        if (nes2list.size() > 0){
+            shoucanganniu.setChecked(true);
+        }
 
     }
 
     private void getData() {
 
-        realNewsurl=getIntent().getStringExtra("realnewsurl");
+
+
         CachePath=this.getApplicationContext().getCacheDir().getAbsolutePath();
         websetting=web_view.getSettings();
         websetting.setJavaScriptEnabled(true);
@@ -76,10 +109,35 @@ public class RealNewsPager extends AppCompatActivity implements View.OnClickList
         ib_goback=(ImageButton) findViewById(R.id.ib_goback);
         ib_textsize = (ImageButton) findViewById(R.id.ib_textsize);
         web_view = (WebView) findViewById(R.id.web_view);
+        shoucanganniu = (ToggleButton) findViewById(R.id.shoucanganniu);
+
 
         //设置点击事件
         ib_goback.setOnClickListener((View.OnClickListener) this);
         ib_textsize.setOnClickListener((View.OnClickListener) this);
+        shoucanganniu.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean ischecked) {
+
+                List<newsshoucang> nes2list = LitePal.where("url=?", realNewsurl).find(newsshoucang.class);
+                if (nes2list.size() == 0 &&ischecked){
+
+                        newsshoucang nes=new newsshoucang();
+                        nes.setUrl(realNewsurl);
+                        nes.setTitle(realNewsTitle);
+                        nes.setDate(realNewsDate);
+                        nes.setPic(realNewsPic);
+                        nes.save();
+                        Toast.makeText(RealNewsPager.this,"新闻收藏成功",Toast.LENGTH_SHORT).show();
+
+                    }else if (nes2list.size() > 0 && !ischecked){
+                        LitePal.deleteAll(newsshoucang.class,"url=?",realNewsurl);
+                        Toast.makeText(RealNewsPager.this,"新闻取消收藏成功",Toast.LENGTH_SHORT).show();
+                    }
+
+
+            }
+        });
     }
 
 

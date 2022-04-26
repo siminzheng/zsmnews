@@ -5,7 +5,7 @@ public class Myapi {
 
 
     //自己服务器联网请求的ip和端口
-    public static final String BASE_URL="http://192.168.100.14:8080/web_home";
+    public static final String BASE_URL="http://10.4.122.232:8080/web_home";
     //自己服务器新闻中心的网络地址
     public static final String NEWSCENTER_URL=BASE_URL+"/static/api/news/categories.json";
 
@@ -28,8 +28,8 @@ public class Myapi {
     public static String Wangyipic_postbaseurl="/1.json";
 
     //网易图片api(我的服务器版本)
-    //比如:http://192.168.100.14:8080/web_home/static/api/news/xinwen/MyPhotoNews1.json
-    public static String Wangyipic_myprebaseurl="http://192.168.100.14:8080/web_home/static/api/news/";
+    //比如:http://10.4.122.232:8080/web_home/static/api/news/xinwen/MyPhotoNews1.json
+    public static String Wangyipic_myprebaseurl="http://10.4.122.232:8080/web_home/static/api/news/";
     public static String Wangyipic_mymidbaseurl="/MyPhotoNews";
     public static String Wangyipic_mypostbaseurl=".json";
 
@@ -71,6 +71,11 @@ public class Myapi {
     //极速新闻具体频道
     public static final String JISULIBIE_URL=JISUBASE_URL+"get?channel=";
     public static final String JISULIBIEHOUZHUI_URL="&start=0&num=40&appkey=c9edbf66b7bda46d";
+
+    //极速数据的小机器人api
+    public static final String JISUSHUJU_JIQIRENBASEURL="https://api.jisuapi.com/iqa/query?appkey=c9edbf66b7bda46d&question=";
+
+
 //    //极速新闻头条url
 //    public static final String JISUTOUTIAO_URL=JISUBASE_URL+"get?channel=头条&start=0&num=40&appkey=c9edbf66b7bda46d";
 //    //极速新闻新闻url

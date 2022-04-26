@@ -3,12 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/drawable-hdpi/d_press_ripple.xml" value="0.13333333333333333" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/drawable-hdpi/d_shape_btn.xml" value="0.10572916666666667" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/drawable/d_shape_btn.xml" value="0.10572916666666667" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/drawable/jpush_demo_dialog_v_bg.xml" value="0.13333333333333333" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/drawable/jpush_demo_selector_switch_btn.xml" value="0.13333333333333333" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/drawable/setting_shoucang.xml" value="0.19537037037037036" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/drawable/tbt_shoucang.xml" value="0.2164102564102564" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_lishitoday.xml" value="0.18" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_login.xml" value="0.17" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_main.xml" value="0.12545289855072464" />
-        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_real_news_pager.xml" value="0.2" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_real_news_pager.xml" value="0.16" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_real_photo_pager.xml" value="0.15896739130434784" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_realxinwenshoucang.xml" value="0.13802083333333334" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_rigister.xml" value="0.15534420289855072" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_wodexinxi.xml" value="0.12" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_xinwenshoucangjiemian.xml" value="0.16394927536231885" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/activity_zhu.xml" value="0.18" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/basepager_layout.xml" value="0.18" />
-        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/contentfragment_layout.xml" value="0.15307971014492755" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/contentfragment_layout.xml" value="0.18" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/d_dialog_msg.xml" value="0.15670289855072464" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/d_dialog_two_button.xml" value="0.15670289855072464" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/d_toast_customs.xml" value="0.15670289855072464" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/jpush_demo_activity_push.xml" value="0.1852355072463768" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/jpush_demo_activity_push_adv.xml" value="0.15670289855072464" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/jpush_demo_customer_notitfication_layout.xml" value="0.15670289855072464" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/jpush_demo_dialog_push_add.xml" value="0.15670289855072464" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/jpush_demo_layout_add.xml" value="0.15670289855072464" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/jpush_demo_layout_text.xml" value="0.15670289855072464" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/listnewsitem.xml" value="0.33" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/listvideoitem.xml" value="0.22" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/newsdetailpager.xml" value="0.12" />
@@ -16,8 +38,10 @@
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/photodetailpager.xml" value="0.18" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/photoitem.xml" value="0.16" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/phototabdetailpager.xml" value="0.16" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/settingdetailpager.xml" value="0.12" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/videodetailpager.xml" value="0.17980072463768115" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/videotabdetailpager.xml" value="0.17527173913043478" />
+        <entry key="..\:/android/work/zsmnews/app/src/main/res/layout/xinwenshoucanglistitem.xml" value="0.22" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19635416666666666" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19635416666666666" />
         <entry key="..\:/android/work/zsmnews/app/src/main/res/xml/network_security_config.xml" value="0.1484375" />

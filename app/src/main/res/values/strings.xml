@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">zsmnews</string>
+
+
+    <string name="toast_copy_ok">内容已复制</string>
+    <string name="toast_modify_ok">更改成功</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="tab_main">主页</string>
+    <string name="tab_info">应用信息</string>
+
+    <string name="pkg">包名：</string>
+    <string name="appKey">AppKey</string>
+    <string name="imei">IMEI</string>
+    <string name="deviceid">Device ID</string>
+    <string name="version">版本号</string>
+    <string name="text_info">111</string>
+    <string name="desc">说明</string>
+    <string name="desc_2" translatable="false">AppKey：极光平台应用的唯一标识。</string>
+    <string name="share" translatable="false">极光分享</string>
+    <string name="link">极光魔链</string>
+    <string name="verify">极光认证</string>
+    <string name="push">极光推送</string>
+    <string name="union">极光联盟</string>
 </resources>

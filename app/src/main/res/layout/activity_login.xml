@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".login">
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="180dp"
+        android:text="邮箱:"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/youxiang_login"
+        android:hint="请输入邮箱账号"
+        android:textSize="20sp"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="100dp"
+        android:outlineAmbientShadowColor="@android:color/black"/>
+
+    <TextView
+
+        android:text="密码:"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="240dp"/>
+    <EditText
+        android:id="@+id/mima_login"
+        android:hint="请输入密码"
+        android:textSize="20sp"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="100dp"
+        android:outlineAmbientShadowColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="340dp"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/bt_register"
+        android:text="注册"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="340dp"
+        android:gravity="center"
+        android:layout_marginLeft="240dp"/>
+
+
+</RelativeLayout>

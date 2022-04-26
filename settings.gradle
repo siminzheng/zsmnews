@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "zsmnews"
 include ':app'
+include ':jiguang'

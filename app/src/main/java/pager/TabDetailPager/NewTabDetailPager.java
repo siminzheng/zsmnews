@@ -2,6 +2,7 @@ package pager.TabDetailPager;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
@@ -156,7 +157,12 @@ public class NewTabDetailPager extends MenuDetailBasePager {
             JuheNews_Bean.ResultEntity.DataEntity newslistitem = newslist.get(position);
             LogUtil.e("新闻详情页面的内容的地址URL是："+newslistitem.getUrl());
             Intent intent=new Intent(context, RealNewsPager.class);
-            intent.putExtra("realnewsurl",newslistitem.getUrl());
+            Bundle bd=new Bundle();
+            bd.putString("realnewsurl",newslistitem.getUrl());
+            bd.putString("realnewstitle",newslistitem.getTitle());
+            bd.putString("realnewsdate",newslistitem.getDate());
+            bd.putString("realnewspic",newslistitem.getThumbnail_pic_s());
+            intent.putExtras(bd);
             context.startActivity(intent);
 
         }

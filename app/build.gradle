@@ -12,6 +12,34 @@ android {
         versionCode 1
         versionName "1.0"
 
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        //极光推送的配置
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "1234c916820d5b19f483ec3c", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                //xiaomi_config_start
+                XIAOMI_APPID  : "MI-小米的APPID",
+                XIAOMI_APPKEY : "MI-小米的APPKEY",
+                //xiaomi_config_end
+                //oppo_config_start
+                OPPO_APPKEY   : "OP-oppo的APPKEY",
+                OPPO_APPID    : "OP-oppo的APPID",
+                OPPO_APPSECRET: "OP-oppo的APPSECRET",
+                //oppo_config_end
+                //vivo_config_start
+                VIVO_APPKEY   : "vivo的APPKEY",
+                VIVO_APPID    : "vivo的APPID",
+                //vivo_config_end
+
+        ]
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -28,6 +56,7 @@ android {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar',"*.aar"])
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
@@ -38,18 +67,32 @@ dependencies {
     implementation 'io.github.h07000223:flycoTabLayout:3.0.0'
     implementation 'cn.jzvd:jiaozivideoplayer:7.7.0'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
-
     // 下拉刷新，上拉加载
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.3'
     // 没有使用特殊Header,可以不加这一依赖
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.3'
-
-
+    implementation project(':jiguang')
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    //jiguang
+    implementation 'org.conscrypt:conscrypt-android:2.2.1'
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.hjq:toast:8.8'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    implementation 'com.tencent:mmkv-static:1.2.4'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.alibaba:arouter-api:1.5.2'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.5.2'
+
+    //shujuku
+    implementation 'org.litepal.guolindev:core:3.2.3'
 
 
 
 
 }
+

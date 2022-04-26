@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pager.realpager.wodexinxi"
+    android:padding="12dp">
+    <TextView
+        android:text="我的新闻app,里面有新闻，图片，以及观看视频的功能,如果有需要，后续还会添加更多功能"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+    <TextView
+        android:text="本项目的Github地址为：https://github.com/siminzheng/zsmnews"
+        android:textSize="30sp"
+        android:textIsSelectable="true"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <Button
+        android:id="@+id/xinxi_fanhui"
+        android:text="返回"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"/>
+
+
+</LinearLayout>

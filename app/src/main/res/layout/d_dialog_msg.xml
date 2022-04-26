@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="自定义消息"
+            android:textColor="#ff253044"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="28dp"
+            android:text="这是一条自定义消息。用户对此无感知，为演示做此效果。"
+            android:textColor="#ff485162"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/d_shape_btn"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</FrameLayout>

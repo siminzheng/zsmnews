@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="130dp">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/xwsc_iv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/newsdefaultphoto2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/xwsc_iv_image"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/xwsc_tv_newstitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="警方披露“二环十三郎”审讯内容"
+
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+
+
+            <TextView
+                android:id="@+id/xwsc_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:text="2022年1月25日"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--            android:src="@drawable/"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginRight="8dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            />-->
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#55000000" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

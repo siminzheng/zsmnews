@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pager.realpager.lishitoday">
+
+
+    <ImageView
+        android:id="@+id/jiqiren_iv"
+        android:src="@drawable/jiqiren3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:text="小Z"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/jiqiren_tv"
+        android:hint=" 你好, 想问些什么呢？"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:lines="2"
+        android:layout_gravity="center"
+        android:layout_width="360dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/tijiao"
+        android:text="提交"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"/>
+
+    <WebView
+        android:id="@+id/jiqiren_webview"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

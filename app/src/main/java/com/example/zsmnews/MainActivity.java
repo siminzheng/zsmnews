@@ -2,13 +2,19 @@ package com.example.zsmnews;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.animation.Animator;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.widget.RelativeLayout;
+
+import com.example.zsmnews.dataBean.user;
+
+import org.litepal.LitePal;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +32,17 @@ public class MainActivity extends AppCompatActivity {
         ani.setDuration(4000);
         ani.setAnimationListener(new MyAnimationListener());
         guide_rlayout.startAnimation(ani);
+
+//        requestPermissions();
     }
+//    private void requestPermissions() {
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            requestPermissions(new String[]{android.Manifest.permission.READ_PHONE_STATE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 100);
+//        }
+//    }
+
+
+
 
     private class MyAnimationListener implements Animation.AnimationListener {
 
@@ -37,7 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onAnimationEnd(Animation animation) {
-            Intent intent=new Intent(MainActivity.this,zhu.class);
+
+            //LitePal.deleteAll(user.class);
+            Intent intent=new Intent(MainActivity.this,login.class);
             startActivity(intent);
             finish();
 

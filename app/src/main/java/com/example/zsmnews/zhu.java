@@ -1,5 +1,7 @@
 package com.example.zsmnews;
 
+import android.Manifest;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +22,13 @@ public class zhu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zhu);
         initFragment();
+        requestPermissions();
 
+    }
+    private void requestPermissions() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(new String[]{android.Manifest.permission.READ_PHONE_STATE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 100);
+        }
     }
 
     private void initFragment(){
