@@ -1,1 +1,2 @@
 # zsmnews
+My news Project.
